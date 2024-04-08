@@ -13,7 +13,5 @@ namespace Assets.Script.Protocols
         public const string SendChatResult = "SendChatResult";
 
         public const string BroadcastMessage = "BroadcastMessage";
-
-        
     }
 }

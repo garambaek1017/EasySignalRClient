@@ -11,13 +11,13 @@ namespace Assets.Script.Network.Processor
         public void RequestToServer(BasePacket req)
         {
             // 클라 -> 서버로 요청할때 Invoke로 호출 하면 됩니다. 
-            proxy.Invoke(req.MethodName, req);
+            Proxy.Invoke(req.MethodName, req);
         }
 
         public void DisConnect()
         {
-            if(hubConnection != null)
-                hubConnection.Stop();
+            if(HubConnection != null)
+                HubConnection.Stop();
         }
     }
 }
