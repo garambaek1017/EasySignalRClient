@@ -1,11 +1,8 @@
 ﻿using Assets.Script.Protocols;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace Assets.Script.Network.Processor
 {
-    
+
     public partial class SignalR_Network
     {
         public void RequestToServer(BasePacket req)
@@ -16,7 +13,7 @@ namespace Assets.Script.Network.Processor
 
         public void DisConnect()
         {
-            if(HubConnection != null)
+            if (HubConnection != null)
                 HubConnection.Stop();
         }
     }
